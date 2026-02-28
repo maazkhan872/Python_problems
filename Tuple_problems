@@ -1,0 +1,33 @@
+# How to Create tuples:
+
+empty = ()
+numbers = (1, 2, 3)
+mixed = (1, "AI", 3.5) 
+
+#  Single element tuple:
+single = (5,)   # comma required
+print(single)
+#Without comma:
+wrong = (5)  # int, not tuple 
+
+# Indexing & Slicing
+numbers = (10, 20, 30, 40)
+print(numbers[0])     # 10
+print(numbers[-1])    # 40
+print(numbers[1:3])   # (20, 30)
+
+numbers = (1, 2, 3)
+numbers[0] = 10   # ❌ Error 
+
+# Tuples method
+numbers = (1, 2, 2, 3)
+print(numbers.count(2))
+print(numbers.index(3))
+
+# Tuple as Dictionary Key
+locations = {
+    (10, 20): "Home",
+    (30, 40): "Office"
+}
+
+print(locations[(10, 20)]) 
